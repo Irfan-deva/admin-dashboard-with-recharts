@@ -10,7 +10,7 @@ const data = [
 
 const PiChartBox = () => {
   return (
-    <div>
+    <div className="piChartBox">
       <h1>Leads by Source</h1>
       <div className="chart">
         <ResponsiveContainer width="99%" height={300}>
@@ -20,11 +20,8 @@ const PiChartBox = () => {
             />
             <Pie
               data={data}
-              cx={120}
-              cy={200}
-              innerRadius={60}
-              outerRadius={80}
-              fill="#8884d8"
+              innerRadius={"60%"}
+              outerRadius={"90%"}
               paddingAngle={5}
               dataKey="value"
             >
@@ -34,6 +31,17 @@ const PiChartBox = () => {
             </Pie>
           </PieChart>
         </ResponsiveContainer>
+      </div>
+      <div className="options">
+        {data.map((item) => (
+          <div className="option" key={item.name}>
+            <div className="title">
+              <div className="dot" style={{ background: item.color }} />
+              <span>{item.name}</span>
+            </div>
+            <span>{item.value}</span>
+          </div>
+        ))}
       </div>
     </div>
   );
