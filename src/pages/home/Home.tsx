@@ -11,6 +11,7 @@ import {
 import "./home.scss";
 import BarChartBox from "../../components/barChartBox/BarChartBox";
 import PiChartBox from "../../components/piChartBox/PiChartBox";
+import BigChart from "../../components/bigChart/BigChart";
 const Home = () => {
   return (
     <div className="home">
@@ -32,7 +33,9 @@ const Home = () => {
       <div className="box box6">
         <ChartBox {...chartBoxConversion} />
       </div>
-      <div className="box box7">box7</div>
+      <div className="box box7">
+        <BigChart />
+      </div>
       <div className="box box8">
         <BarChartBox {...barChartBoxVisit} />
       </div>
