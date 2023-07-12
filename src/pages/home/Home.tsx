@@ -1,5 +1,5 @@
 import ChartBox from "../../components/chartBox/ChartBox";
-import TopBox from "../../components/tobBox/TopBox";
+import TopBox from "../../components/topBox/TopBox";
 import {
   barChartBoxRevenue,
   barChartBoxVisit,
