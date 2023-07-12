@@ -57,7 +57,7 @@ const data = [
 function BigChart() {
   return (
     <div className="bigChartBox">
-      <h1>Title</h1>
+      <h1>Revenue Analytics</h1>
       <div className="chart">
         <ResponsiveContainer width="99%" height="100%">
           <AreaChart
