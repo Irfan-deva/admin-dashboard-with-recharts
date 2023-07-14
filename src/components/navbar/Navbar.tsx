@@ -3,7 +3,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="logo.svg" alt="logo" />
+        <img src="/logo.svg" alt="logo" />
         <span>ADMIN UI</span>
       </div>
       <div className="icons">
@@ -23,5 +23,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;
