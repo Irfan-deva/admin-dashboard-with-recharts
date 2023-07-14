@@ -3,11 +3,13 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import Users from "./pages/users/Users";
 import Products from "./pages/products/Products";
+import Product from "./pages/product/Product";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
 import Login from "./pages/Login/Login";
 import "./styles/global.scss";
+import User from "./pages/user/User";
 function App() {
   const Layout = () => {
     return (
@@ -42,6 +44,14 @@ function App() {
         {
           path: "products",
           element: <Products />,
+        },
+        {
+          path: "users/:id",
+          element: <User />,
+        },
+        {
+          path: "products/:id",
+          element: <Product />,
         },
       ],
     },
